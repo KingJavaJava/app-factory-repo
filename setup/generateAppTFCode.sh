@@ -20,7 +20,7 @@ email="${user}@github.com"
 seed_project_id=${6}
 folder_id=${7}
 github_org_to_clone_templates_from=${8}
-cd software-delivery-app-infra
+cd app-factory-repo
 
 if [ -z $(find apps -maxdepth 1 -type d -name ${app_runtime}) ]; then
   echo "${app_runtime} folder not found under apps. Please add ${app_runtime} to app_runtimes_list.txt to set it up first." && exit 1

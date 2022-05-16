@@ -15,7 +15,7 @@ user=${1}
 email="${user}@github.com"
 sa_to_impersonate=${2}
 
-cd software-delivery-app-infra
+cd app-factory-repo
 base_dir="config/repositories-runtime-config"
 for app in `cat ${base_dir}/app_runtimes_list.txt`
     do

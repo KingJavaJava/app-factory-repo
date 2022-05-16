@@ -20,7 +20,7 @@ teams_basedir="teams"
 configdir="config/teams-configs"
 teams_module="git::https://github.com/${org}/terraform-modules.git//manage-teams"
 
-cd software-delivery-app-infra
+cd app-factory-repo
 target_dir="teams"  #This is where all teams related tf files will be created
 team_name=$(echo ${raw_team_name} | tr '[:upper:]' '[:lower:]') #converting team name to lowercase as we will use that to name directories. Team names are case in-sensitive in github anyway
 
